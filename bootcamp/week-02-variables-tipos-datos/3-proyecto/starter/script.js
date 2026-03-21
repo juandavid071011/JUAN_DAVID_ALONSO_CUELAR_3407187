@@ -12,8 +12,8 @@
 //    única y coherente con tu dominio asignado.
 //    Implementaciones copiadas serán detectadas.
 //
-// Adapta cada TODO al contexto de tu dominio asignado.
-// Los ejemplos en este archivo usan dominios NO asignables.
+// Ejemplos de dominio: Biblioteca, Farmacia, Gimnasio,
+// Restaurante, Banco, Hospital, Hotel, Cine, y más.
 // ============================================
 
 // ============================================
@@ -21,42 +21,42 @@
 // ============================================
 
 // TODO: Reemplaza "Mi Dominio" con el nombre de tu dominio
-const DOMAIN_NAME = "Mi Dominio";
+const DOMAIN_NAME = "Tienda de Equipamiento Deportivo";
 
 // TODO: Cambia "Nombre del elemento" por algo de tu dominio
-// Ejemplos con dominios no asignables:
-//   Planetario → "Sistema Solar en 3D"
-//   Acuario    → "Tiburón Ballena"
-//   Museo      → "La Gioconda (réplica)"
-const itemName = "Nombre del elemento";
+// Ejemplos:
+//   Biblioteca → "El Quijote"
+//   Farmacia   → "Ibuprofeno 400mg"
+//   Gimnasio   → "Plan Mensual Premium"
+const itemName = "Camiseta Deportiva";
 
 // TODO: Agrega una categoría, tipo o descripción corta (string)
-// Ejemplos con dominios no asignables:
-//   Planetario → showType = "Función inmersiva"
-//   Acuario    → habitat = "Océano Pacífico"
-//   Museo      → artStyle = "Renacimiento"
-const itemCategory = "Categoría del elemento";
+// Ejemplos:
+//   Biblioteca → genre = "Novela clásica"
+//   Farmacia   → category = "Analgésico"
+//   Gimnasio   → planType = "Premium"
+const itemCategory = "Ropa Deportiva";
 
 // TODO: Agrega un número relevante a tu dominio (integer o decimal)
-// Ejemplos con dominios no asignables:
-//   Planetario → capacity = 250
-//   Acuario    → tankVolume = 2_500_000
-//   Museo      → estimatedValue = 4_800_000
-const itemQuantity = 0; // reemplaza 0 con el número adecuado
+// Ejemplos:
+//   Biblioteca → totalPages = 863
+//   Farmacia   → pricePerUnit = 15_500
+//   Gimnasio   → monthlyFee = 89_900
+const itemQuantity = 60000; // reemplaza 0 con el número adecuado
 
 // TODO: Agrega un boolean con prefijo semántico (is/has/can/should)
-// Ejemplos con dominios no asignables:
-//   Planetario  → isOpen = true
-//   Acuario     → isEndangered = false
-//   Museo       → isOnDisplay = true
-const isItemAvailable = false; // reemplaza con algo de tu dominio
+// Ejemplos:
+//   Biblioteca → isAvailable = true
+//   Farmacia   → requiresPrescription = false
+//   Gimnasio   → isActive = true
+const isItemAvailable = true; // reemplaza con algo de tu dominio
 
 // TODO: Declara un valor null que signifique "no asignado aún"
 // en tu dominio
-// Ejemplos con dominios no asignables:
-//   Planetario → currentGuide = null
-//   Acuario    → feedingSchedule = null
-//   Museo      → currentOwner = null
+// Ejemplos:
+//   Biblioteca → currentBorrower = null
+//   Farmacia   → expirationDate = null
+//   Gimnasio   → assignedTrainer = null
 const pendingValue = null; // cambia el nombre a algo de tu dominio
 
 
@@ -75,6 +75,8 @@ console.log(`Nombre:    ${itemName}`);
 console.log(`Categoría: ${itemCategory}`);
 // TODO: Agrega un console.log para itemQuantity
 // TODO: Agrega un console.log para isItemAvailable
+console.log(`Precio: ${itemQuantity}`);
+console.log(`Disponible: ${isItemAvailable}`);
 console.log("");
 
 
@@ -87,6 +89,9 @@ console.log("--- Tipos de datos ---");
 // Ejemplo: console.log("typeof itemName:    ", typeof itemName);
 console.log("typeof itemName:     ", typeof itemName);
 // TODO: Agrega typeof para otras 2 variables
+console.log("typeof itemCategory:     ", typeof itemCategory);
+console.log("typeof itemQuantity:     ", typeof itemQuantity);
+console.log("typeof itemAvailable:     ", typeof isItemAvailable);
 console.log("");
 
 
@@ -107,6 +112,14 @@ console.log("--- Conversiones ---");
 // console.log("typeof (convertido):", typeof priceAsText);
 
 // TODO: Agrega tu conversión aquí
+const quantityAsBoolean = Boolean(itemQuantity);
+
+console.log("Cantidad:", itemQuantity);
+console.log("Tipo original:", typeof itemQuantity);
+
+console.log("Cantidad convertida a Boolean:", quantityAsBoolean);
+console.log("Tipo convertido:", typeof quantityAsBoolean);
+
 
 console.log("");
 
@@ -123,6 +136,8 @@ console.log("--- Valor nulo ---");
 // console.log("¿Es null?:", pendingValue === null);    // true
 console.log("Valor pendiente:", pendingValue);
 // TODO: Agrega typeof y la verificación === null
+console.log("typeof null:", typeof pendingValue);    // "object" ← bug histórico
+console.log("¿Es null?:", pendingValue === null);
 console.log("");
 
 

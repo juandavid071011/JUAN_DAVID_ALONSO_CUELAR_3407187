@@ -24,7 +24,11 @@
 //   Observatorio: SESSION_DURATION = 90, TICKET_PRICE = 18_000
 
 // const EXAMPLE_CONSTANT = 0; // TODO: Reemplazar con tus constantes
-
+const SHIRT_PRICE = 50_000;
+const SHOES_PRICE = 120_000;
+const JACKET_PRICE = 130_000;
+const SHORTS_PRICE = 25_000;
+const MAX_STOCK = 100;
 // ============================================
 // SECCIÓN 2: Operaciones aritméticas
 // ============================================
@@ -41,6 +45,23 @@ console.log("=== Operaciones básicas ===");
 // console.log("Ingresos función:", totalRevenue);
 // const remainingSeats = 45 - attendees;
 // console.log("Asientos disponibles:", remainingSeats);
+const shirtsSold = 5;
+const shoesSold = 4;
+const jacketSold = 2;
+const shortsSold = 5;
+
+const totalShirts = SHIRT_PRICE * shirtsSold;
+console.log("Total camisetas:", totalShirts);
+const totalShoes = SHOES_PRICE * shoesSold;
+console.log("Total zapatos:", totalShoes);
+const totalJacket = JACKET_PRICE * jacketSold;
+console.log("Total chaquetas", totalJacket)
+const totalShorts = SHORTS_PRICE * shortsSold;
+console.log("Total pantalonetas", totalShorts)
+const totalSales = totalShirts + totalShoes + totalJacket + totalShorts;
+console.log("Total ventas:", totalSales);
+const remainingStock = MAX_STOCK - (shirtsSold + shoesSold + jacketSold + shortsSold);
+console.log("Stock restante:", remainingStock);
 
 console.log("");
 
@@ -60,6 +81,21 @@ console.log("=== Asignación compuesta ===");
 // console.log("Tras segundo item:", runningTotal);
 // runningTotal *= 0.90; // descuento del 10%
 // console.log("Con descuento:", runningTotal);
+let total = 0; 
+total += totalShirts;
+console.log("Después de camisetas:", total);
+
+total += totalShoes;
+console.log("Después de zapatos:", total);
+
+total += totalJacket;
+console.log("Despues de chaquetas", total)
+
+total += totalShorts;
+console.log("Despues de pantalonetas", total)
+
+total *= 0.9; // descuento del 10%
+console.log("Con descuento:", total);
 
 console.log("");
 
@@ -77,6 +113,14 @@ console.log("=== Validaciones con === ===");
 // console.log("¿Entregado a tiempo?", isOnTime);
 // const hasFine = daysLate > 0;
 // console.log("¿Tiene multa?", hasFine);
+const noSales = totalSales === 0;
+console.log("¿No hubo ventas?", noSales);
+
+const highSale = totalSales >= 200_000;
+console.log("¿Venta alta?", highSale);
+
+const exactStock = remainingStock === 0;
+console.log("¿Stock agotado?", exactStock);
 
 console.log("");
 
@@ -93,6 +137,16 @@ console.log("=== Condiciones lógicas ===");
 // const purchaseAmount = 150_000;
 // const qualifiesForDiscount = isMember && purchaseAmount >= 100_000;
 // console.log("¿Descuento aplicable?", qualifiesForDiscount);
+const isVip = true;
+
+const applyDiscount = isVip && totalSales >= 100_000;
+console.log("¿Aplica descuento?", applyDiscount);
+
+const importantSale = totalSales >= 150_000 || isVip;
+console.log("¿Venta importante?", importantSale);
+
+const hasStock = remainingStock > 0;
+const noStock = !hasStock;
 
 console.log("");
 
@@ -103,5 +157,9 @@ console.log("=== Resumen ===");
 
 // TODO: Muestra un resumen con los valores más importantes
 // calculados en las secciones anteriores
+console.log("Ventas totales:", totalSales);
+console.log("Total con descuento:", total);
+console.log("Stock restante:", remainingStock);
+console.log("¿Cliente VIP?", isVip);
 
 console.log("");

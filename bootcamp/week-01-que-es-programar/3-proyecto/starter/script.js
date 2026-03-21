@@ -30,7 +30,7 @@
 // TODO: Cambia el título con el nombre de tu dominio y un identificador
 // Ejemplo (Planetario): '    PLANETARIO MUNICIPAL - FICHA #001    '
 console.log('=========================================');
-console.log('[TU DOMINIO] - FICHA DE PRESENTACIÓN');
+console.log('TIENDA DE EQUIPAMIENTO DEPORTIVO - 3407187');
 console.log('=========================================');
 console.log('');
 
@@ -43,24 +43,24 @@ console.log('INFORMACIÓN GENERAL');
 console.log('--------------------');
 
 // TODO: Reemplaza con el nombre de tu entidad principal (string — con comillas)
-// Ejemplos con dominios no asignables:
-//   Planetario  → nombre de la exhibición: 'Sistema Solar en 3D'
-//   Acuario     → nombre de la especie:    'Tiburón Ballena'
-//   Museo       → título de la obra:       'La Gioconda (réplica)'
-//   Zoológico   → nombre del animal:       'León Africano'
-console.log('Nombre:          [NOMBRE DE LA ENTIDAD]');
+// Ejemplos según dominio:
+//   Farmacia    → nombre del medicamento:  'Ibuprofeno 400mg'
+//   Gimnasio    → nombre de la rutina:     'Rutina Full Body'
+//   Restaurante → nombre del platillo:     'Lasaña Boloñesa'
+//   Biblioteca  → título del libro:        'El Principito'
+console.log('Nombre:          Camiseta deportiva');
 
 // TODO: Reemplaza con un código o identificador único (string o number)
-// Ejemplos: 'PLN-042', 'ACU-117', 'MUS-007', 452
-console.log('Código:          [CÓDIGO O ID]');
+// Ejemplos: 'LIB-042', 'MED-117', 452
+console.log('Código:          CAM-01');
 
 // TODO: Reemplaza con la categoría o tipo de la entidad (string)
-// Ejemplos: 'Astronomía - Nivel básico', 'Pez cartilaginoso', 'Arte renacentista'
-console.log('Categoría:       [CATEGORÍA O TIPO]');
+// Ejemplos: 'Novela - Ficción', 'Antiinflamatorio', 'Ejercicio cardiovascular'
+console.log('Categoría:       Ropa Deportiva');
 
 // TODO: Indica el estado actual de la entidad (string)
 // Ejemplos: 'Disponible', 'En stock', 'Activo', 'Ocupado'
-console.log('Estado:          [ESTADO ACTUAL]');
+console.log('Estado:          Disponible');
 
 console.log('');
 
@@ -74,7 +74,7 @@ console.log('--------------------');
 
 // TODO: Reemplaza con un dato numérico relevante para tu dominio (number — sin comillas)
 // Ejemplos: precio → 15000, stock → 48, páginas → 320, capacidad → 30
-console.log('Valor principal:    [NÚMERO SIN COMILLAS]');
+console.log('Valor principal:    60000');
 
 // TODO: Reemplaza el 0 por una expresión aritmética que se calcule automáticamente
 // No uses variables — escribe directamente el cálculo con números literales
@@ -82,14 +82,14 @@ console.log('Valor principal:    [NÚMERO SIN COMILLAS]');
 //   Precio con 20% descuento:  15000 * 0.8
 //   Total (cantidad × precio): 3 * 15000
 //   Capacidad restante:        30 - 12
-console.log('Valor calculado:    ', 0); // TODO: reemplaza 0 con tu cálculo
+console.log('Valor calculado:    ', 60000 * 2); // TODO: reemplaza 0 con tu cálculo
 
 // TODO: Valor boolean que representa un estado de la entidad (true o false — sin comillas)
 // Ejemplos: disponible → true, enStock → false, esNuevo → true
-console.log('Estado booleano 1:  [true o false]');
+console.log('Estado booleano 1:  ', true);
 
 // TODO: Otro valor boolean diferente al anterior (true o false — sin comillas)
-console.log('Estado booleano 2:  [true o false]');
+console.log('Estado booleano 2:  ', false);
 
 console.log('');
 
@@ -102,16 +102,16 @@ console.log('RESUMEN DEL DOMINIO');
 console.log('--------------------');
 
 // TODO: Escribe el nombre de tu dominio asignado (string)
-// Ejemplos: 'Planetario', 'Acuario', 'Museo', 'Zoológico'
-console.log('Dominio:          [TU DOMINIO ASIGNADO]');
+// Ejemplos: 'Biblioteca', 'Farmacia', 'Gimnasio'
+console.log('Dominio:          TIENDA DE EQUIPAMIENTO DEPORTIVO');
 
 // TODO: ¿Cómo se llama la entidad principal de tu dominio? (string)
-// Ejemplos: 'exhibición', 'especie', 'obra', 'animal', 'evento'
-console.log('Entidad:          [TIPO DE ENTIDAD]');
+// Ejemplos: 'libro', 'medicamento', 'platillo', 'miembro', 'cuenta'
+console.log('Entidad:         Producto');
 
 // TODO: ¿Cuántos registros tiene tu dominio en total? (number — sin comillas)
 // Puede ser un número inventado pero coherente con el dominio
-console.log('Total registros:  [NÚMERO TOTAL]');
+console.log('Total registros:  100');
 
 console.log('');
 
@@ -124,7 +124,7 @@ console.log('=========================================');
 
 // TODO: Escribe un mensaje de cierre relacionado con tu dominio (string)
 // Ejemplo (Planetario): '  ¡Explora el universo con JavaScript!'
-console.log('[MENSAJE DE CIERRE DE TU DOMINIO]');
+console.log(' ¡Equípate con lo mejor y mejora tu rendimiento deportivo!');
 
 console.log('=========================================');
 

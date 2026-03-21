@@ -21,26 +21,26 @@
 // ============================================
 
 // TODO: Define el nombre de tu dominio
-const DOMAIN_NAME = "Mi Dominio";
+const DOMAIN_NAME = "Tienda de equipamiento deportivo";
 
 // TODO: Define el nombre de la entidad principal
 // Inclúyelo con espacios y mayúsculas/minúsculas
 // para poder aplicar transformaciones después
-const rawEntityName = "  nombre de la entidad  ";
+const rawEntityName = "  Camiseta deportiva  ";
 
 // TODO: Define una categoría o tipo (string)
-const entityCategory = "Categoría del elemento";
+const entityCategory = "Ropa deportiva";
 
 // TODO: Define un código identificador (string)
 // Elige un prefijo coherente con tu dominio
-const entityCode = "COD-001";
+const entityCode = "CAM-01";
 
 // TODO: Define una descripción corta (string)
 // Debe contener varias palabras para usar includes/slice
-const entityDescription = "Descripción interesante de la entidad del dominio asignado.";
+const entityDescription = "Camiseta deportiva para alto rendimiento.";
 
 // TODO: Define un dato numérico relevante (number)
-const mainValue = 0;
+const mainValue = 60_000;
 
 // TODO: Define un estado booleano
 const isActive = true;
@@ -74,11 +74,11 @@ const hasValidPrefix = entityCode.startsWith(codePrefix);
 
 // TODO: Verifica si la descripción contiene una palabra clave
 // Usa includes() con una palabra importante de tu dominio
-const descriptionIsRelevant = entityDescription.includes("dominio");
+const descriptionIsRelevant = entityDescription.includes("deportiva");
 
 // TODO: Verifica si el código termina con los dígitos
 // Usa endsWith() con algo coherente de tu dominio
-const hasValidSuffix = entityCode.endsWith("001");
+const hasValidSuffix = entityCode.endsWith("01");
 
 
 // ============================================
@@ -118,7 +118,7 @@ console.log("--- Validaciones ---");
 // TODO: Muestra los resultados de las validaciones con template literals
 console.log(`¿Código empieza con '${codePrefix}'?: ${hasValidPrefix}`);
 console.log(`¿Descripción contiene 'dominio'?: ${descriptionIsRelevant}`);
-console.log(`¿Código termina con '001'?: ${hasValidSuffix}`);
+console.log(`¿Código termina con '01'?: ${hasValidSuffix}`);
 console.log("");
 
 
