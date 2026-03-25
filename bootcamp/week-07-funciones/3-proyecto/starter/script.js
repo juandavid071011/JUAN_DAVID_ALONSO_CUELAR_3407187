@@ -26,8 +26,8 @@
 // Ejemplo: const TAX_RATE = 0.19;
 //          const CURRENCY = "USD";
 //          const DOMAIN_NAME = "Mi Dominio";
-const DOMAIN_NAME = "Mi Dominio";
-const VALUE_LABEL = "valor"; // Ej: "precio", "cantidad", "duración"
+const DOMAIN_NAME = "Tienda de equipamiento deportivo";
+const VALUE_LABEL = "precio"; // Ej: "precio", "cantidad", "duración"
 
 // TODO: Define un array con al menos 5 elementos de tu dominio.
 // Cada elemento debe ser un objeto con propiedades relevantes.
@@ -39,6 +39,12 @@ const VALUE_LABEL = "valor"; // Ej: "precio", "cantidad", "duración"
 // ];
 const items = [
   // TODO: Agrega tus elementos aquí
+  { id :1, name : "camiseta", category: "ropa", value: 50_000, active: true },
+  { id :2, name : "zapatillas", category: "calzado", value: 120_000, active: true },
+  { id :3, name : "chaqueta", category: "ropa", value: 130_000, active: true },
+  { id :4, name : "pantaloneta", category: "ropa", value: 25_000, active: true },
+  { id :5, name : "zapatos futbol", category: "calzado", value: 150_000, active: true },
+  { id :6, name : "balon futbol", category: "balones", value: 45_000, active: true },
 ];
 
 // ============================================
@@ -62,7 +68,7 @@ const formatItem = (item) => {
   // 1. Incluir el nombre del elemento
   // 2. Incluir la categoría o tipo
   // 3. Incluir el valor numérico relevante
-  return `${item.name}`; // TODO: Expandir este template
+  return `${item.name} [${item.category}] — $${item.value}`; // TODO: Expandir este template
 };
 
 // ============================================
@@ -121,7 +127,7 @@ const isValid = (item) => {
 // const formatPrice = (price, currency = "USD", showTax = false) =>
 //   showTax ? `${currency} ${(price * 1.19).toFixed(2)}` : `${currency} ${price.toFixed(2)}`;
 
-const formatWithDefault = (value, label = VALUE_LABEL, currency = "") => {
+const formatWithDefault = (value, label = VALUE_LABEL, currency = "$") => {
   // TODO: Implementar con parámetros por defecto relevantes al dominio
   return currency
     ? `${label}: ${currency} ${value}`
@@ -147,7 +153,7 @@ console.log(`${"═".repeat(45)}`);
 // TODO: Reemplaza este código de ejemplo con la implementación real
 
 if (items.length === 0) {
-  console.log("\n⚠️  No hay elementos. Agrega datos en la Sección 1.");
+  console.log("\n⚠️  No hay productos en la tienda. ");
 } else {
   // --- Listado ---
   console.log("\n📋 Listado:");
