@@ -68,7 +68,7 @@ const formatItem = (item) => {
   // 1. Incluir el nombre del elemento
   // 2. Incluir la categoría o tipo
   // 3. Incluir el valor numérico relevante
-  return `${item.name} [${item.category}] — $${item.value}`; // TODO: Expandir este template
+  return `${item.name} [${item.category}] — $${item.value.toLocaleString()}`; // TODO: Expandir este template
 };
 
 // ============================================
@@ -88,6 +88,7 @@ const formatItem = (item) => {
 
 const calculateValue = (baseValue, factor = 1) => {
   // TODO: Implementar el cálculo relevante para tu dominio
+  
   return baseValue * factor;
 };
 
