@@ -60,7 +60,7 @@ let lineNumber = 0;
 for (const item of items) {
   lineNumber++;
   // TODO: Reemplaza este console.log con la información de tu dominio
-  console.log(`${lineNumber}. ${item.name} — ${item.category} — ${valueLabel}: ${item.value}` ); 
+  console.log(`${lineNumber}. ${item.name} — ${item.category} — ${valueLabel}:  $${item.value.toLocaleString()}`);
 }
 
 console.log("");
@@ -127,8 +127,8 @@ if (items.length > 0) {
   }
 
   // TODO: Imprime los resultados
-  console.log(`Mayor ${valueLabel}: ${maxItem?.name} (${maxItem?.value.toLocaleString})`);
-  console.log(`Menor ${valueLabel}: ${minItem?.name} (${minItem?.value.toLocaleString})`);
+  console.log(`Mayor ${valueLabel}: ${maxItem?.name} (${maxItem?.value.toLocaleString()})`);
+  console.log(`Menor ${valueLabel}: ${minItem?.name} (${minItem?.value.toLocaleString()})`);
 }
 
 console.log("");
