@@ -28,7 +28,7 @@
 // (ej: books, medicines, machines, dishes, patients...)
 const items = [
   // TODO: Agrega tus elementos aquí
-  { name: "camiseta", category: "ropa", value: 50_000 },
+  { name: "camiseta", category: "ropa", value: 60_000 },
    { name: "zapatillas", category: "calzado", value: 120_000 },
    { name: "chaqueta", category: "ropa", value: 130_000 },
    { name: "pantaloneta", category: "ropa", value: 25_000 },
