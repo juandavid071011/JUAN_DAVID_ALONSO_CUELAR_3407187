@@ -55,9 +55,9 @@ console.log("Total camisetas:", totalShirts);
 const totalShoes = SHOES_PRICE * shoesSold;
 console.log("Total zapatos:", totalShoes);
 const totalJacket = JACKET_PRICE * jacketSold;
-console.log("Total chaquetas", totalJacket)
+console.log("Total chaquetas:", totalJacket)
 const totalShorts = SHORTS_PRICE * shortsSold;
-console.log("Total pantalonetas", totalShorts)
+console.log("Total pantalonetas:", totalShorts)
 const totalSales = totalShirts + totalShoes + totalJacket + totalShorts;
 console.log("Total ventas:", totalSales);
 const remainingStock = MAX_STOCK - (shirtsSold + shoesSold + jacketSold + shortsSold);
@@ -89,10 +89,10 @@ total += totalShoes;
 console.log("Después de zapatos:", total);
 
 total += totalJacket;
-console.log("Despues de chaquetas", total)
+console.log("Despues de chaquetas:", total)
 
 total += totalShorts;
-console.log("Despues de pantalonetas", total)
+console.log("Despues de pantalonetas:", total)
 
 total *= 0.9; // descuento del 10%
 console.log("Con descuento:", total);
