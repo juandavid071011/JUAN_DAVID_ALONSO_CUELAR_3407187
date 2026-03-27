@@ -148,6 +148,8 @@ console.log("¿Venta importante?", importantSale);
 const hasStock = remainingStock > 0;
 const noStock = !hasStock;
 
+console.log("¿sin stock?", noStock);
+
 console.log("");
 
 // ============================================

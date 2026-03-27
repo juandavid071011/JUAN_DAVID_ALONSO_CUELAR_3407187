@@ -98,7 +98,7 @@ Nombre:      ${entityNameUpper}
 Categoría:   ${entityCategory}
 Código:      ${entityCode}
 Prefijo:     ${codePrefix}
-Valor:       ${mainValue}
+Valor:       ${mainValue.toLocaleString()}
 Estado:      ${isActive ? "Activo" : "Inactivo"}
 
 ${subSeparator}
@@ -117,7 +117,7 @@ console.log(mainCard);
 console.log("--- Validaciones ---");
 // TODO: Muestra los resultados de las validaciones con template literals
 console.log(`¿Código empieza con '${codePrefix}'?: ${hasValidPrefix}`);
-console.log(`¿Descripción contiene 'dominio'?: ${descriptionIsRelevant}`);
+console.log(`¿Descripción contiene 'deportiva'?: ${descriptionIsRelevant}`);
 console.log(`¿Código termina con '01'?: ${hasValidSuffix}`);
 console.log("");
 

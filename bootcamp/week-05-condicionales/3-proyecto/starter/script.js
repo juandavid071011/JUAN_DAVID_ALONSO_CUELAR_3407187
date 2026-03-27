@@ -59,7 +59,7 @@ if (elementValue >= 100) {
 // TODO: Usa el ternario para determinar un estado de dos opciones.
 // Ejemplo: const statusLabel = elementStatus === "active" ? "Activo" : "Inactivo";
 
-const statusLabel = elementStatus === "active" ? "disponible" : "no disponible"; // TODO: implementar con ternario
+const statusLabel = elementStatus === "active" ? "disponible" : "no disponible "; // TODO: implementar con ternario
 
 // ============================================
 // SECCIÓN 4: Tipo con switch
@@ -92,7 +92,7 @@ switch (elementType) {
 // TODO: Usa ?? para obtener un valor de fallback cuando sea null o undefined.
 // Ejemplo: const displayName = elementName ?? "Sin nombre";
 
-const displayName = elementName ?? "no tiene nombre";      // TODO: elementName ?? "Sin nombre"
+const displayName = elementName ?? "sin nombre";      // TODO: elementName ?? "Sin nombre"
 const infoDetail = elementInfo?.detail ?? "no tiene informacion adicional";       // TODO: elementInfo?.detail ?? "Sin información adicional"
 
 // ============================================
@@ -120,9 +120,6 @@ console.log("=".repeat(40));
 // TODO: console.log(`Tipo: ${typeLabel}`);
 // TODO: console.log(`Detalle: ${infoDetail}`);
 // TODO: console.log(`Propiedad adicional: ${safeProperty}`);
-console.log("=".repeat(40));
-console.log("FICHA DE CLASIFICACIÓN");
-console.log("=".repeat(40));
 console.log(`Nombre: ${displayName}`);
 console.log(`Estado: ${statusLabel}`);
 console.log(`Clasificación: ${classification}`);

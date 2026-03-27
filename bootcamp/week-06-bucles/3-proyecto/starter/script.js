@@ -28,24 +28,24 @@
 // (ej: books, medicines, machines, dishes, patients...)
 const items = [
   // TODO: Agrega tus elementos aquí
-  { name: "camiseta", category: "ropa", value: 100 },
-   { name: "zapatillas", category: "calzado", value: 90 },
-   { name: "chaqueta", category: "ropa", value: 50 },
-   { name: "pantaloneta", category: "ropa", value: 80 },
-   { name: "balon", category: "accesorio", value: 20 }
-   { name: "zapatos futbol", category: "calzado", value: 10 }
+  { name: "camiseta", category: "ropa", value: 50_000 },
+   { name: "zapatillas", category: "calzado", value: 120_000 },
+   { name: "chaqueta", category: "ropa", value: 130_000 },
+   { name: "pantaloneta", category: "ropa", value: 25_000 },
+   { name: "balon", category: "balones", value: 45_000 },
+   { name: "zapatos futbol", category: "calzado", value: 150_000 }
 ];
 
 // TODO: Define las categorías relevantes para tu dominio
 // (ej: para Biblioteca sería ["ficción", "no-ficción", "ciencia"])
-const categories = [ "ropa", "calzado", "accesorio"
+const categories = [ "ropa", "calzado", "accesorio", "balones"
   // TODO: lista tus categorías
 
 ];
 
 // TODO: Define un nombre descriptivo para el valor numérico
 // (ej: "páginas", "stock", "horas de uso", "precio", "duración")
-const valueLabel = "stock"; // ← cambiar
+const valueLabel = "precio"; // ← cambiar
 
 // ============================================
 // SECCIÓN 2: Listado completo con for...of
@@ -127,8 +127,8 @@ if (items.length > 0) {
   }
 
   // TODO: Imprime los resultados
-  console.log(`Mayor ${valueLabel}: ${maxItem?.name} (${maxItem?.value})`);
-  console.log(`Menor ${valueLabel}: ${minItem?.name} (${minItem?.value})`);
+  console.log(`Mayor ${valueLabel}: ${maxItem?.name} (${maxItem?.value.toLocaleString})`);
+  console.log(`Menor ${valueLabel}: ${minItem?.name} (${minItem?.value.toLocaleString})`);
 }
 
 console.log("");
