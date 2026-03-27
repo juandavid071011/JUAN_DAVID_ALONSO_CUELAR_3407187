@@ -44,7 +44,7 @@ const items = [
   { id :3, name : "chaqueta", category: "ropa", value: 130_000, active: true },
   { id :4, name : "pantaloneta", category: "ropa", value: 25_000, active: true },
   { id :5, name : "zapatos futbol", category: "calzado", value: 150_000, active: true },
-  { id :6, name : "balon futbol", category: "balones", value: 45_000, active: true },
+  { id :6, name : "balon futbol", category: "balones", value: 45_000, active: true }
 ];
 
 // ============================================
