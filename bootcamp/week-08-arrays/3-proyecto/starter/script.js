@@ -33,7 +33,7 @@ const VALUE_LABEL = "productos";     // TODO: Cambiar por unidad de tu dominio
 
 const items = [
   // TODO: Agrega al menos 5 objetos de tu dominio
-  { id :1, name : "camiseta", category: "ropa", value: 50_000, active: true },
+  { id :1, name : "camiseta", category: "ropa", value: 60_000, active: true },
   { id :2, name : "zapatillas", category: "calzado", value: 120_000, active: true },
   { id :3, name : "chaqueta", category: "ropa", value: 130_000, active: true },
   { id :4, name : "pantaloneta", category: "ropa", value: 25_000, active: true },
